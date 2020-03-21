@@ -1,7 +1,7 @@
-// 时钟部分
 window.addEventListener("load", function() {
     time();
     window.setInterval('time()', 1000);
+
     (function() {
         var myChart = echarts.init(document.querySelector(".bar .chart"));
         var option = {
@@ -680,7 +680,7 @@ window.addEventListener("load", function() {
         });
     })();
 });
-
+// 时钟部分
 function time() {
     dt = new Date();
     var y = dt.getFullYear();
